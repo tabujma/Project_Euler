@@ -1,0 +1,15 @@
+#Problem number 1 - Natural numbers
+
+print "Enter a number: "
+num = gets.chomp.to_i
+sum = 0
+count = 1
+
+while count < num 
+    if count % 3 == 0 || count % 5 ==0
+        sum += count
+    end
+    count += 1
+end
+
+puts "Sum = " + sum.to_s
