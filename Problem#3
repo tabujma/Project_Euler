@@ -1,0 +1,21 @@
+#Problem 3 - Greatest Prime Factor
+
+print "Enter a number: "
+num = gets.chomp.to_i #600851475143
+
+  i = 2
+  largest = 0
+  while (i <= num)
+    if (num % i == 0)
+      while (num % i == 0 )
+        num = num / i
+        largest = i
+        i += 1
+      end
+    end
+    i += 1
+  end
+
+puts largest
+
+#just referenced some guy in google, but will change it eventually to my own code
