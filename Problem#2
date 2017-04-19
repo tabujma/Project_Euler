@@ -1,0 +1,21 @@
+#Problem #2 - Fibonacci Sequence
+
+
+print "Enter number: "
+num = gets.chomp.to_i
+
+num1 = 1
+num2 = 2
+evenSum = 0
+
+puts num1
+while num1 < num do
+   sum = num1 + num2
+   num1 = num2
+   num2 = sum
+ 
+   evenSum += num1 if num1 % 2 == 0
+   
+   puts num1
+end
+puts "Sum of even terms is " + evenSum.to_s
