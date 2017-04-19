@@ -1,0 +1,15 @@
+#Least Common Multiple
+
+print "Enter a number: "
+num = gets.chomp.to_i
+
+min = (num / 2).to_i + 1
+lcMul   = min
+
+(min..num).each do |count|
+  lcMul = lcMul.lcm count
+end
+
+puts "LCM is " + lcMul.to_s 
+
+#p (1...20).to_a.reduce(:lcm)
