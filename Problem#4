@@ -1,0 +1,13 @@
+#Problem 4 - Largest Palindrome Product
+
+num = 0
+
+for i in (999).downto(100)
+  for j in (999).downto(100)
+    product = i * j
+    
+     num = product if product >num && product.to_s == product.to_s.reverse
+     
+  end
+end
+puts "The largest palindrome product is " + num.to_s
