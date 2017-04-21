@@ -1,0 +1,27 @@
+#Sum Square Difference
+
+print "Enter a number: "
+num = gets.chomp.to_i
+count = 1
+result = 0
+
+while count <= num
+    square = count**2
+    result = result + square
+    count += 1
+end
+
+count = 1
+sum = 0
+while count <= num
+    sum = sum + count
+    sumSquare = sum**2
+    count += 1
+end
+
+diff = sumSquare - result
+
+
+puts result
+puts sumSquare
+puts diff
