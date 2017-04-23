@@ -1,0 +1,9 @@
+require 'prime'
+
+#Prime.each(10001) do |prime|
+#  p prime  
+#end
+
+#^ have to make counter for 10001
+
+puts Prime.take(10001).last
